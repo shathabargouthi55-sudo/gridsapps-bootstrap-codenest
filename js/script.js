@@ -92,3 +92,59 @@ document.addEventListener("DOMContentLoaded", function () {
     document.title = "CodeNest | " + product.name;
 
 });
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("contactForm");
+
+    if (!form) {
+        return;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+
+    const service = params.get("service");
+    const plan = params.get("plan");
+
+    const serviceSelect = document.getElementById("service");
+    const planSelect = document.getElementById("plan");
+
+    if (service) {
+        serviceSelect.value = service;
+
+        if (serviceSelect.selectedIndex === -1) {
+            serviceSelect.value = "";
+        }
+    }
+
+    if (plan) {
+        planSelect.value = plan;
+
+        if (planSelect.selectedIndex === -1) {
+            planSelect.value = "";
+        }
+    }
+
+    const successMessage = document.getElementById("successMessage");
+
+    form.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        successMessage.classList.add("d-none");
+
+        if (!form.checkValidity()) {
+
+            form.classList.add("was-validated");
+
+            return;
+        }
+
+        successMessage.classList.remove("d-none");
+
+        form.reset();
+
+        form.classList.remove("was-validated");
+
+    });
+
+});
