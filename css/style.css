@@ -14,3 +14,50 @@ body {
     background-color: var(--light-color);
     color: var(--dark-color);
 }
+.navbar {
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    color: var(--dark-color);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand-icon {
+    background-color: var(--primary-color);
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav-link {
+    color: #475569;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--primary-color);
+}
+
+.btn-brand {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-brand:hover {
+    background-color: #4338ca;
+    color: white;
+}
