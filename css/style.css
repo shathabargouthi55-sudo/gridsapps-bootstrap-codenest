@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #4f46e5;
+    --dark-color: #0f172a;
+    --light-color: #f8fafc;
+    --white-color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
