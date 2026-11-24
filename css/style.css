@@ -135,4 +135,48 @@ body {
 
 .technology-item:hover i {
     transform: translateY(-5px);
+}.services-section {
+    background-color: var(--light-color);
+}
+
+.section-label {
+    color: var(--primary-color);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.service-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(79, 70, 229, 0.1);
+    border-color: var(--primary-color);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #eef2ff;
+    color: var(--primary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.service-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.service-link:hover {
+    color: #4338ca;
 }
