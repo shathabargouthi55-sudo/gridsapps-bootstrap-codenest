@@ -107,3 +107,32 @@ body {
     display: block;
     margin: auto;
 }
+.technologies-section {
+    background-color: var(--white-color);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.technologies-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #64748b;
+}
+
+.technology-item i {
+    font-size: 45px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.technology-item p {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.technology-item:hover i {
+    transform: translateY(-5px);
+}
