@@ -558,4 +558,18 @@ body {
     color: #64748b;
     line-height: 1.8;
     padding: 20px;
+}.modal-content {
+    border: none;
+    border-radius: 16px;
+}
+
+.modal-body p {
+    color: #64748b;
+    line-height: 1.8;
+}
+
+.modal-body img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
 }
