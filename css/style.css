@@ -535,4 +535,27 @@ body {
     justify-content: center;
     font-weight: bold;
     flex-shrink: 0;
+}.faq-accordion {
+    max-width: 850px;
+    --bs-accordion-active-bg: #eef2ff;
+    --bs-accordion-active-color: #4f46e5;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 3px #c7d2fe;
+}
+
+.faq-accordion .accordion-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.faq-accordion .accordion-button {
+    font-weight: 600;
+    padding: 20px;
+}
+
+.faq-accordion .accordion-body {
+    color: #64748b;
+    line-height: 1.8;
+    padding: 20px;
 }
