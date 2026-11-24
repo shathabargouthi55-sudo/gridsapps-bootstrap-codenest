@@ -201,4 +201,104 @@ body {
 .about-list i {
     color: var(--primary-color);
     font-size: 18px;
+}.testimonials-section {
+    background-color: var(--light-color);
+}
+
+.testimonial-card {
+    background-color: var(--white-color);
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    min-height: 340px;
+}
+
+.quote-icon {
+    font-size: 48px;
+    color: var(--primary-color);
+}
+
+.testimonial-stars {
+    color: #f59e0b;
+    font-size: 18px;
+}
+
+.testimonial-text {
+    color: #64748b;
+    font-size: 18px;
+    line-height: 1.8;
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.client-avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #e0e7ff;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: auto;
+}
+
+#testimonialsCarousel {
+    padding: 0 55px 45px;
+}
+
+.carousel-arrow {
+    color: var(--primary-color);
+    font-size: 22px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#testimonialsCarousel .carousel-control-prev,
+#testimonialsCarousel .carousel-control-next {
+    width: 50px;
+    opacity: 1;
+}
+
+#testimonialsCarousel .carousel-indicators button {
+    background-color: var(--primary-color);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+    .testimonial-card {
+        padding: 25px 15px;
+    }
+
+    .testimonial-text {
+        font-size: 15px;
+    }
+
+    #testimonialsCarousel {
+        padding: 0 35px 45px;
+    }
+
+    .carousel-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    #testimonialsCarousel .carousel-control-prev,
+    #testimonialsCarousel .carousel-control-next {
+        width: 30px;
+    }
 }
