@@ -61,3 +61,49 @@ body {
     background-color: #4338ca;
     color: white;
 }
+.hero-section {
+    background: linear-gradient(135deg, #f8fafc, #eef2ff);
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: #e0e7ff;
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.text-brand {
+    color: var(--primary-color);
+}
+
+.hero-section h1 {
+    line-height: 1.2;
+}
+
+.btn-outline-brand {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 16px;
+    display: block;
+    margin: auto;
+}
