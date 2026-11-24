@@ -471,4 +471,35 @@ body {
     border-radius: 16px;
     border: 1px solid #e2e8f0;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}.pricing-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.1);
+}
+
+.popular-plan {
+    border: 2px solid var(--primary-color);
+}
+
+.popular-label {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.pricing-card .about-list li {
+    margin-bottom: 16px;
 }
