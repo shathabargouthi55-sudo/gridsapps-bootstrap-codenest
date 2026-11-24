@@ -379,4 +379,23 @@ body {
 
 .footer-divider {
     border-color: #475569;
+}.page-header {
+    background: linear-gradient(135deg, #f8fafc, #eef2ff);
+}
+
+.page-header .breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.page-header .breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.mission-section {
+    background-color: var(--light-color);
+}
+
+.values-section {
+    background-color: var(--white-color);
 }
